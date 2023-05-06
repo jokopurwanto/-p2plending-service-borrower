@@ -18,9 +18,6 @@ public class BorrowerModel {
     @Column(name ="id")
     private Integer id;
 
-    @Column(name = "id_loan_req")
-    private Integer idLoanReq;
-
     @Column(name = "id_user")
     private Integer idUser;
 
@@ -34,7 +31,7 @@ public class BorrowerModel {
     private String email;
 
     @Column(name = "balance")
-    private String balance;
+    private Integer balance;
 
     @Column(name = "pin")
     private Integer pin;

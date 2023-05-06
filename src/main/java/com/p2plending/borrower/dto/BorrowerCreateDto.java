@@ -17,8 +17,6 @@ import java.sql.Date;
 @Builder
 public class BorrowerCreateDto {
 
-    private Integer idLoanReq;
-
     @NotNull(message = "Invalid idUser: idUser is NULL")
     private Integer idUser;
 
@@ -32,7 +30,7 @@ public class BorrowerCreateDto {
     private String email;
 
     @NotNull(message = "Invalid balance: balance is NULL")
-    private String balance;
+    private Integer balance;
 
     @NotNull(message = "Invalid pin: pin is NULL")
     private Integer pin;

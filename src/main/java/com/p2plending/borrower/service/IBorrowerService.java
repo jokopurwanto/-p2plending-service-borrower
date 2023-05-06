@@ -8,7 +8,7 @@ import java.util.Map;
 
 public interface IBorrowerService {
     public BorrowerModel createBorrower(BorrowerCreateDto borrowerCreateDto);
-    public Map<String, Object> updateBorrower(BorrowerCreateDto borrowerCreateDto);
+    public BorrowerModel updateBorrower(BorrowerCreateDto borrowerCreateDto, Integer id);
     public Map<String, Object> deleteBorrower(Integer id);
     public BorrowerModel getBorrower(Integer id);
     public List<BorrowerModel> getAllCBorrower();
